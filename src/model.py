@@ -6,10 +6,11 @@ from flair.models import SequenceTagger
 
 def load_models():
     # load tagger
-    tagger_english = SequenceTagger.load("flair/ner-english-fast")
-    tagger_french = SequenceTagger.load("flair/ner-french")
+    tagger_multi = SequenceTagger.load("flair/ner-multi")
+    # tagger_english = SequenceTagger.load("flair/ner-english-fast")
+    # tagger_french = SequenceTagger.load("flair/ner-french")
     return {
-        "en": tagger_english,
-        "fr": tagger_french
+        "en": tagger_multi,
+        "fr": tagger_multi
     }
 
